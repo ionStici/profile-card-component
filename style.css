@@ -1,0 +1,43 @@
+/* CSS RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* GENERAL STYLES */
+
+:root {
+    --img-width: 622px;
+    --img-height: 621px;
+}
+
+/* 1200px */
+@media only screen and (min-width: 75em) {
+    :root {
+        --img-width: 978px;
+        --img-height: 976px;
+    }
+}
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.main {
+    position: relative;
+}

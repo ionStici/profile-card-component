@@ -4,6 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
         <title>Profile card component</title>
 
@@ -11,13 +15,39 @@
     </head>
     <body>
 
+        <main class="main">
+                <img class="bg-top" src="./images/bg-pattern-top.svg" alt="Background Pattern">
+                <img class="bg-bottom" src="./images/bg-pattern-bottom.svg" alt="Background Pattern">
 
+            <div class="card">
+                <img class="card__header" src="./images/bg-pattern-card.svg" alt="">
+                <img class="card__picture" src="./images/image-victor.jpg" alt="Profile Picture">
 
-        Victor Crest 26 
-        London 
-        80K Followers 
-        803K Likes 
-        1.4K Photos
+                <p class="card__name">
+                    <span class="card__name--1">Victor Crest</span>
+                    <span class="card__name--num">26</span>
+                </p>
+
+                <p class="card__loc">London</p>
+
+                <div class="card__wrapper">
+                    <p class="card__box">
+                        <span class="card__text-up">80K</span>
+                        <span class="card__text-down">Followers</span>
+                    </p>
+
+                    <p class="card__box">
+                        <span class="card__text-up">803K</span>
+                        <span class="card__text-down">Likes</span>
+                    </p>
+
+                    <p class="card__box">
+                        <span class="card__text-up">1.4K</span>
+                        <span class="card__text-down">Photos</span>
+                    </p>
+                </div>
+            </div>
+        </main>
 
     </body>
 </html>
